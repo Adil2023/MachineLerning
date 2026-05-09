@@ -3,10 +3,11 @@
 ## ⚠️ MANDATORY SAFETY RULES
 **FAILURE TO FOLLOW THESE RULES CAN RESULT IN ELECTRIC SHOCK.**
 
-1. **BATTERY POWER ONLY:** Never use a wall-plug power supply (AC adapter) for this circuit. Use only 9V batteries.
+1. **SINGLE 9V BATTERY POWER ONLY:** Never use a wall-plug power supply or more than one 9V battery in a way that bypasses the single-battery design.
 2. **OSCILLOSCOPE ISOLATION:**
    - If using a mains-powered oscilloscope, ensure the circuit is **only** connected to the oscilloscope via the probe and ground clip.
    - Do not connect any other mains-powered devices (like a PC via USB) to the circuit while it is attached to a human.
+   - **Note:** The oscilloscope ground is connected to Battery (-), while your body is connected to VGND (4.5V). This is safe as long as the battery is isolated from the mains.
 3. **NO LIQUID SPILLS:** Keep Ten20 paste away from the breadboard. Keep all liquids away from the experimental setup.
 4. **DISCONNECT BEFORE MODIFYING:** Always remove the electrodes from your body before making any changes to the circuit.
 
@@ -14,8 +15,8 @@
 Before attaching electrodes to yourself, perform these tests:
 
 1. **Power Check:**
-   - Measure voltage between Pin 4 and GND (should be ~+9V).
-   - Measure voltage between Pin 11 and GND (should be ~-9V).
+   - Measure voltage between Pin 4 and Pin 11 (should be ~9V).
+   - Measure voltage between VGND and Pin 11 (should be ~4.5V).
 2. **Noise Floor Check:**
    - Short Pin 12 and Pin 5 to GND using jumper wires.
    - Observe Pin 8 on the oscilloscope. You should see a very flat line with minimal noise (less than 100mV peak-to-peak).
