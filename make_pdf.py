@@ -16,13 +16,20 @@ def create_pdf():
     pdf = PDF()
     pdf.set_auto_page_break(auto=True, margin=15)
 
+    # Add Image Page First
+    if os.path.exists('EEG_Breadboard_Detailed_Layout.png'):
+        pdf.add_page(orientation='L')
+        pdf.set_font('helvetica', 'B', 16)
+        pdf.cell(0, 10, 'Breadboard Layout Diagram', new_x="LMARGIN", new_y="NEXT", align='C')
+        pdf.image('EEG_Breadboard_Detailed_Layout.png', x=10, y=30, w=270)
+
     files = ['DESIGN.md', 'ASSEMBLY.md', 'TESTING.md']
 
     for filename in files:
         if not os.path.exists(filename):
             continue
 
-        pdf.add_page()
+        pdf.add_page(orientation='P')
         pdf.set_font('helvetica', 'B', 16)
         pdf.cell(0, 10, filename.replace('.md', ''), new_x="LMARGIN", new_y="NEXT", align='L')
         pdf.ln(5)
