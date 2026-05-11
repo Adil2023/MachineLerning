@@ -1,0 +1,3 @@
+## 2024-05-11 - Improving Documentation as UX in Minimalist Repos
+**Learning:** In repositories lacking a traditional software interface (e.g., hardware design or documentation-only repos), the README.md becomes the primary user interface. Micro-UX improvements should focus on information hierarchy, discoverability (Table of Contents), and prominent safety warnings to ensure a safe and intuitive user journey.
+**Action:** When encountering minimal repos, prioritize the "documentation-as-interface" pattern. Ensure high-stakes information (like safety warnings) is prioritized over technical details.
