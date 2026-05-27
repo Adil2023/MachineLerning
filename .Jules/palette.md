@@ -1,0 +1,3 @@
+## 2025-05-14 - Documentation as UI: Branding and Safety
+**Learning:** In documentation-centric hardware projects, the README.md is the primary user interface. Typos in major headings (e.g., "MachineLerning") severely undermine the credibility of critical safety instructions. Proactive placement of safety warnings using high-visibility callouts (e.g., `[!WARNING]`) is a essential accessibility/UX feature for preventing physical harm.
+**Action:** Always prioritize correcting branding typos and surfacing critical safety information at the very top of the entry point file to establish trust and ensure user safety.
