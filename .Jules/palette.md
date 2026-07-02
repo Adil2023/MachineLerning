@@ -1,0 +1,3 @@
+## 2025-05-14 - Branding and Safety as Documentation UX
+**Learning:** In documentation-heavy repositories (like hardware designs), the README is the primary user interface. Professional branding (correct spelling) and prominent safety warnings (using callouts) are critical for establishing user trust and ensuring safe interaction with the product. A single micro-UX improvement can bundle these related elements to significantly enhance the landing page experience.
+**Action:** Always prioritize safety warnings and brand integrity at the top of the documentation in the absence of a traditional GUI. Use GitHub-native callout syntax for maximum visibility.
